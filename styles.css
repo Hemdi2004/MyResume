@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+.main {
+  flex: 1;
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 30px;
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.creative {
+  color: #2e3a8c;
+  font-weight: 700;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card img.tile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  color: #2e3a8c;
+  margin-bottom: 10px;
+}
+
+.card-text, .card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  background-color: #2e3a8c;
+  color: white;
+  padding: 40px 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+footer a {
+  color: #00c4ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card img.tile-image {
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  .card h2, .card p {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card-text, .card p {
+    font-size: 1rem;
+  }
+}
